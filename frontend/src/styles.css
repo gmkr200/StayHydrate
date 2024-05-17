@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --color-grey-primary: #f0f0f0;
+  --color-yellow-primary: goldenrod;
+  --color-orange-primary: darkorange;
+  --color-green-primary: mediumseagreen;
+}
+.productImage {
+  display: block;
+  margin: 0 auto; /* This will center align the image */
+  border-radius: 10px;
+}
+
+.Prodct {
+  text-align: center;
+}
+.filter-section {
+  position: absolute;
+  top: 62px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+  z-index: 999; /* Adjust the z-index to ensure it appears above other content if necessary */
+}
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Heading {
+  font-size: large;
+}
+.productCard {
+  align-items: center;
+  position: relative;
+  background-color: var(--color-grey-primary);
+  margin: 1rem;
+  flex: 1 0 25rem;
+  max-width: 30rem;
+  max-height: 50rem;
+  transition: 0.2s;
+  text-align: center;
+  font-size: large;
+}
+
+.article {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cart_box {
+  margin: 5px;
+  font-size: medium;
+}
+
+/*
+
+.productCard{
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-grey-primary);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 40px;
+  align-items: center;
+  padding: 0 10rem;
+}*/
+.productCard:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+}
+
+.productRating {
+  display: flex; /* Enable horizontal layout */
+  justify-content: center; /* Center align items horizontally */
+}
+
+.productRating FaStar {
+  /* Adjust star size if needed */
+  width: 20px; /* Example width */
+  height: 20px; /* Example height */
+}
+
+.productImage {
+  margin-top: 2rem;
+  max-width: 100%;
+  height: auto;
+}
+.App {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Create a responsive grid with minimum column width of 300px */
+  grid-gap: 20px; /* Add gap between grid items */
+  justify-items: center; /* Align grid items along the center horizontally */
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Adjust for desired columns and minimum width */
+  grid-gap: 20px; /* Adjust spacing between cards */
+}
+
+.btn {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #00ffc8;
+}
+
+.falsestockalert {
+  visibility: hidden; /* Hide the text */
+  opacity: 0; /* Make the text transparent */
+}
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --color-primary: #2c3e50;
+  --color-secondary: #34495e;
+  --color-accent: #e67e22;
+  --color-background: #f4f4f4;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+/* Product Card Styles */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  padding: 50px;
+}
+
+.productCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+}
+
+.productImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Prodct {
+  padding: 20px;
+}
+
+.Heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.productRating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.productRating .FaStar {
+  color: var(--color-accent);
+  margin: 0 2px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: var(--color-accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d35400;
+}
+
+.falsestockalert {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}

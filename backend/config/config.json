@@ -1,0 +1,28 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "1234",
+    "database": "stayhydrate",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "1234",
+    "database": "stayhydrate",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "1234",
+    "database": "stayhydrate",
+    "host": "localhost",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true
+      }
+    }
+  }
+}

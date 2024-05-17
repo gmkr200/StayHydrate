@@ -1,0 +1,23 @@
+{
+  "name": "stayhydrate",
+  "version": "1.0.0",
+  "description": "Staywell-fullstack-development",
+  "main": "ecosystem.config.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npx nodemon app.js"
+  },
+  "author": "manikumarreddy",
+  "license": "ISC",
+  "dependencies": {
+    "pm2": "^5.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
